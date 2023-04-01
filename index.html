@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebTech | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <section class="hero" id="home">
+      <header class="primary-header container flex">
+        <div>
+          <h3 class="logo">WebTech</h3>
+        </div>
+        <button
+          class="nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul
+            data-visible="false"
+            id="primary-navigation"
+            class="primary-navigation flex"
+          >
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+            <li>
+              <a href="./signup.html"> SignUp </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-container container grid">
+        <div class="hero-text">
+          <h1>Learn With WebTech</h1>
+          <p>Learn to code in 2023.</p>
+          <p>We made learning web development pretty easier and free.</p>
+        </div>
+        <div class="login-form card">
+          <h2>Login</h2>
+          <form>
+            <div class="form-control">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username.."
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password.."
+                required
+              />
+            </div>
+            <input type="submit" value="Login" class="btn btn-primary" />
+            <p>
+              Don't have an account? <a href="./signup.html">Signup here</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <h1>About Us</h1>
+          <div class="about-container flex">
+            <div class="about-img">
+              <img src="./assets/images/htmlLogo.png" alt="" />
+            </div>
+            <div class="about-para">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                aperiam reprehenderit rem cumque voluptatum minus ducimus
+                voluptates doloremque perspiciatis sunt, iste, fuga quas eaque
+                nulla impedit qui, maiores ipsa aliquid?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                aperiam reprehenderit rem cumque voluptatum minus ducimus
+                voluptates doloremque perspiciatis sunt, iste, fuga quas eaque
+                nulla impedit qui, maiores ipsa aliquid?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                aperiam reprehenderit rem cumque voluptatum minus ducimus
+                voluptates doloremque perspiciatis sunt, iste, fuga quas eaque
+                nulla impedit qui, maiores ipsa aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h1>reach us at</h1>
+          <div class="contact-container">
+            <div class="contact-details">
+              <ul>
+                <li><i class="fa fa-envelope"></i>contact@learnwebtech.com</li>
+                <li><i class="fa fa-phone"></i>+91 9999 999 999</li>
+                <li><i class="fa fa-map-marker"></i>Miraj, Maharashtra, IN</li>
+              </ul>
+            </div>
+            <div class="contact-form">
+              <form action="">
+                <label for="name">Enter name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter name.."
+                  required
+                />
+
+                <label for="email">Enter email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email.."
+                  required
+                />
+
+                <label for="msg">Enter message:</label>
+                <textarea
+                  name="msg"
+                  id=""
+                  cols="30"
+                  rows="4"
+                  placeholder="Enter message.."
+                  required
+                ></textarea>
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="footer-para">
+          &#169;2023 <a href="#">Learn WebTech</a>. All Rights Reserved
+        </p>
+        <p>
+          Designed and Developed with <i class="fa fa-heart"></i> by
+          <br />Taskin Mukhtar Mujawar and Rohini Kankappa Chandanwale.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
