@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn WebTech</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebTech | Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+  </head>
+  <body>
+    <section class="signup hero" id="home">
+      <header class="primary-header container flex">
+        <div>
+          <h3 class="logo">WebTech</h3>
+        </div>
+        <button
+          class="nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul
+            data-visible="false"
+            id="primary-navigation"
+            class="primary-navigation flex"
+          >
+            <li>
+              <a href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li>
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+            <li>
+              <a href="./signup.html"> SignUp </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="signup-container container flex">
+        <div class="login-form card">
+          <h2>Sign Up</h2>
+          <form>
+            <div class="form-control">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name.."
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter username.."
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter password.."
+                required
+              />
+            </div>
+
+            <input type="submit" value="Sign Up" class="btn btn-primary" />
+            <p>
+              Already have an account? <a href="./index.html">Login here</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
